@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #080710;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 426px) {
+  #loginpagecontainer {
+    margin-left: 80px;
+  }
+}
+
+@media (max-width: 460px) {
+  #navbarlogo {
+    display: none;
+  }
+}
+
+@media (max-width: 376px) {
+  #loginpagecontainer {
+    margin-left: 130px;
+    margin-top: 110px;
+  }
+}
