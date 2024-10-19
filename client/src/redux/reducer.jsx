@@ -1,7 +1,7 @@
 import { DATA, DETAIL_ITEM, LOGIN_TRACKER } from "./actions";
 
 const initstate = {
-  is_login: false,
+  is_login: localStorage.getItem("token") ? true : false,
   data: [],
   item: localStorage.getItem("task_details")
     ? JSON.parse(localStorage.getItem("task_details"))
