@@ -52,7 +52,7 @@ Start the server
 
 ## Tech Stack
 
-**Frontend:** HTML, CSS, JSX, React.js <br/>
+**Frontend:** HTML, CSS, Tailwind CSS, JSX, React.js <br/>
 _libraries:_ Redux, axios, React-router-dom, react-icons, Framer Motion, React Toastify <br/>
 **Backend:** Node.js, Mongodb, Express.js <br/>
 _libraries:_ Argon2, CORS, JSON Web Token<br/>
