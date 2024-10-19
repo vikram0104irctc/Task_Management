@@ -21,7 +21,7 @@ export const Home = () => {
   useEffect(() => {
     if (token) {
       axios
-        .get(`http://localhost:8081/api/task/${token}`)
+        .get(`https://task-management-r4tm.onrender.com/api/task/${token}`)
         .then((response) => {
           dispatch(dataRefresher(response.data));
         })
@@ -31,7 +31,7 @@ export const Home = () => {
 
   function handleDelete(id) {
     axios
-      .delete(`http://localhost:8081/api/task/${id}/${token}`)
+      .delete(`https://task-management-r4tm.onrender.com/api/task/${id}/${token}`)
       .then((response) => {
         toast.success("Task deleted successfully!", {
           position: "top-center",
@@ -44,7 +44,7 @@ export const Home = () => {
           transition: Bounce,
         });
         axios
-          .get(`http://localhost:8081/api/task/${token}`)
+          .get(`https://task-management-r4tm.onrender.com/api/task/${token}`)
           .then((response) => {
             dispatch(dataRefresher(response.data));
           })

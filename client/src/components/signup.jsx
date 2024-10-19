@@ -78,7 +78,7 @@ const SignupForm = () => {
       password: password,
     };
     axios
-      .post("http://localhost:8081/api/register", obj)
+      .post("https://task-management-r4tm.onrender.com/api/register", obj)
       .then((res) => {
         toast.success("Signup successful 😀", {
           transition: Bounce,

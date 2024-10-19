@@ -45,7 +45,7 @@ const TaskFormModal = ({ setIsOpen }) => {
       return;
     }
     axios
-      .post(`http://localhost:8081/api/task/${token}`, newTask)
+      .post(`https://task-management-r4tm.onrender.com/api/task/${token}`, newTask)
       .then((response) => {
         toast.success("Task created successfully!", {
           position: "top-center",
@@ -59,7 +59,7 @@ const TaskFormModal = ({ setIsOpen }) => {
         });
         setIsOpen(false);
         axios
-          .get(`http://localhost:8081/api/task/${token}`)
+          .get(`https://task-management-r4tm.onrender.com/api/task/${token}`)
           .then((response) => {
             dispatch(dataRefresher(response.data));
           })
